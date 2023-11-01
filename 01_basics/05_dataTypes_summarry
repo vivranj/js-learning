@@ -55,3 +55,31 @@ Return type of variables in JavaScript
 
        JavaScript is a dynamically typed language. Because data type will automatically assigned at the time of compilation or code execution
 */
+
+// ++++++++++++heap and stack ++++++++++++++++++
+
+//stack(primitive) -> copy milta h and heap(non-primitive) - reference milta hai
+
+let name1="vivek"
+let anotherName= name1;
+
+anotherName="balle"
+
+console.log(name1);
+console.log(anotherName);
+
+
+let userOne={
+    name:"viv",
+    mail:"viv@gmail.com"
+}
+
+let userTwo=userOne;
+
+console.log(userOne);
+console.log(userTwo);
+
+userTwo.mail="ballle.com"
+
+console.log(userOne);
+console.log(userTwo);
